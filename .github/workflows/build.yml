@@ -4,3 +4,6 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      shield: corne_left corne_right
+      board: nice_nano_v2
